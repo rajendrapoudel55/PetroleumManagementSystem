@@ -1,0 +1,115 @@
+/*
+ * This file previously used Tailwind CSS directives and @apply, but these are not valid in plain CSS.
+ * If you want to use Tailwind, ensure you are processing this file with Tailwind CLI or Laravel Mix.
+ * Otherwise, use standard CSS below or link to Tailwind CDN in your Blade templates.
+ */
+
+body {
+    background: #f7fafc;
+    color: #2d3748;
+    font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+.btn-danger {
+    background: #dc2626;
+    color: #fff;
+}
+.btn-danger:hover {
+    background: #b91c1c;
+}
+.input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px #bfdbfe;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.table th {
+    background: #e5e7eb;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+.table td {
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+.nozzle-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    border-radius: 0.5rem;
+}
+.gradient-bg {
+    background: #1e3a5f;
+    box-shadow: 0 2px 8px rgba(30,58,95,0.15);
+}
+.btn-nozzle-primary {
+    background: #1e293b;
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-nozzle-primary:hover:not(:disabled) {
+    background: #334155;
+}
+.btn-nozzle-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.btn-delete {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btn-delete:hover {
+    background: #fecaca;
+}
+.message {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    text-align: center;
+}
+.message.success {
+    background: #bbf7d0;
+    color: #166534;
+}
+.message.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
